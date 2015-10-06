@@ -1,3 +1,4 @@
+//header
 .site-nav {
   text-align: center;
 
@@ -26,5 +27,30 @@
   background: url('../img/home-bg.jpg') no-repeat;
   background-size: cover;
   text-align: center;
+}
 
+//footer
+
+.site-footer {
+  padding: 2em 0 0;
+  background: $grey-color-dark;
+  color: white;
+}
+
+.footer-content {
+  float: left;
+  width: 40;
+  font-size: 0.875em;
+
+  h3 {
+    text-align: left;
+  }
+}
+
+.social-media {
+  float: right;
+  li {
+    display: inline-block;
+    margin: 0 0.5em;
+  }
 }
