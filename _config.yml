@@ -3,7 +3,7 @@ title: Portfolio - Tisha Greenidge
 email: tisha.m.greenidge@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Software Engineer specializing in JavaScript, Angular, Nodejs, Express, HTML, CSS
-baseurl: "www.tgreenidge.com/portfolio" # the subpath of your site, e.g. /blog/
+baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "www.tgreenidge.com" # the base hostname & protocol for your site
 twitter_username: nav_grl_onrails
 github_username:  tgreenidge
