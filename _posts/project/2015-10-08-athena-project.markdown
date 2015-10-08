@@ -9,4 +9,4 @@ live-link: https://athena-news.github.io/
 ---
 
 
-I worked on this project in a group 4.
+Project description pending.
