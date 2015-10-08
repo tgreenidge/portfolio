@@ -10,7 +10,7 @@ layout: default
       <h2>Featured Article</h2>
       <!-- assign a variable called count to keep track of featured counts -->
       {% assign count = 0 %} 
-      {% for post in site.posts reversed %}
+      {% for post in site.categories['blog'] reversed %}
         {% if post.featured == true and count < 1 %}
           <div class="post-featured">
             {% include post.html %}
@@ -24,13 +24,22 @@ layout: default
 
 
   <!-- featured projects -->
+  <section class="site-section">
+    
+      <h2>Featured Projects</h2>
+      <ul class="project-list">
+        {% for project in site.categories['project'] reversed | limit:3 %}
+            {% include project.html %}
+        {% endfor %}
+      </ul>   
+  </section>
 
   <!-- latest articles -->
   <section class="site-section site-section-latest">
     <div class="wrapper">
       <h2>Most Recent Articles</h2>
       <ul class="post-list">
-        {% for post in site.posts reversed | limit:4 %}
+        {% for post in site.categories['blog'] reversed | limit:4 %}
           <li class="post">
             {% include post.html %}
           </li>
