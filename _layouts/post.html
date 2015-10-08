@@ -13,6 +13,12 @@ layout: default
         <img src="{{ page.featured_img }}" alt="{{ page.title }} featured image">
       </div>
     {% endif %}
+
+    {% if page.live-link %}
+      <div class="post-link">
+        <a href="{{ page.live-link }}" target="_blank"><strong>{{ page.live-link }}</strong></a>
+      </div>
+    {% endif %}
   </header>
 
   <div class="post-body">
