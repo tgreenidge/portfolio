@@ -1,0 +1,23 @@
+.post-list {
+  @extend %clearfix; //prevents sections from collapsing on each other
+  list-style: none;
+}
+
+.post {
+  float: left;
+  width: 50%;
+  padding: 0 3em 1em;
+
+  &:nth-child(even) {
+    clear: both;
+  }
+}
+
+.post-read-more {
+  text-align: center;
+}
+
+.post-featured {
+  float: none;
+  margin: 0 auto;
+}

@@ -1,0 +1,6 @@
+<h3><a href="{{ post.url | prepend:site.baseurl}}">{{ post.title }}</a></h3>
+<!-- use jekyll filters to strip content -->
+<p>{{ post.content | strip_html | strip_newlines | truncate: 200 }}</p>
+<p class="post-read-more">
+  <a href="{{ post.url | prepend:site.baseurl}}">read more ...</a>
+</p>

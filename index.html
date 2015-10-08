@@ -4,19 +4,38 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Site Under Construction</h1>
+  <!-- featured post -->
+  <section class="site-section">
+    <div class="wrapper">
+      <h2>Featured Article</h2>
+      <!-- assign a variable called count to keep track of featured counts -->
+      {% assign count = 0 %} 
+      {% for post in site.posts reversed %}
+        {% if post.featured == true and count < 1 %}
+          <div class="post-featured">
+            {% include post.html %}
+          </div>
+          <!-- increment count by 1 -->
+          {% assign count = count | plus: 1 %}
+        {% endif %}
+      {% endfor %}  
+    </div>
+  </section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <!-- featured projects -->
 
-  
+  <!-- latest articles -->
+  <section class="site-section site-section-latest">
+    <div class="wrapper">
+      <h2>Most Recent Articles</h2>
+      <ul class="post-list">
+        {% for post in site.posts reversed | limit:4 %}
+          <li class="post">
+            {% include post.html %}
+          </li>
+        {% endfor %}
+      </ul>   
+    </div>
+  </section>
 </div>

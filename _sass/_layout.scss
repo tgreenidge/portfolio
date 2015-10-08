@@ -54,3 +54,13 @@
     margin: 0 0.5em;
   }
 }
+
+// sections
+
+.site-section {
+  @extend %clearfix; //prevents sections from collapsing on each other
+}
+
+.site-section-latest {
+  padding-bottom: $h1-font-size;
+}
