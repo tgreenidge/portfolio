@@ -4,6 +4,7 @@ title:  "Jekyll Site Deployment With Google Domains"
 date:   2015-10-07
 categories: blog
 featured: true
+comments: true
 ---
 
 For the first couple of days at Hack Reactor, we have been focusing on polishing our resumes. That coupled with the fact that I listed my domain on my Greenfield Group Project site, is driving me to get my site up and running. I now have projects that I want to show to the world, but unfortunately, it's not going as smoothly as I would like.
