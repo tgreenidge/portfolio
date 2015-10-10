@@ -7,7 +7,7 @@ featured: true
 comments: true
 ---
 
-For the first couple of days this week at Hack Reactor, we have been focusing on polishing our resumes. That coupled with the fact that I listed my domain on my Greenfield Group Project site, is driving me to get my site up and running. I something that I want to show to the world, and I am using Github Pages as my platform. 
+For the first couple of days this week at Hack Reactor, we have been focusing on polishing our resumes. That coupled with the fact that I listed my domain on my Greenfield Group Project site, is driving me to get my site up and running. I have something that I want to show to the world, and I am using Github Pages as my platform. 
 
 ### Google.com Domain
 Did you know that Google now sells domains? I purchased my domain from Google after learning that GoDaddy would charge me $103, because I previously had a domain through them that expired. I am no longer eligible for their awesome discounts - ughh. My domain purchased through Google only cost me around $12 per year, with the following features as extracted from [Google Domains Help page](https://support.google.com/domains/answer/6010092?hl=en):
@@ -27,7 +27,7 @@ Did you know that Google now sells domains? I purchased my domain from Google af
 While I may not have use for email fowarding just yet, it is a nice to have. However, the Whois privacy is an amazing (FREE) feature that allows me to hide and protect my personal information that is associated wirh my domain since I am the owner of the domain. When queried, all my personal info, with the exception of my name, points to a third party company in New Zealand. 
 
 ### Github hosting
-To use Github pages to host my site, I had to create a branch called gh-pages and push to that branch. There is some setting up involved, so I will give you an overview. 
+In order to use Github Pages to host my site, I had to create a branch called gh-pages and push to that branch. There is some setting up involved, so I will give you an overview. 
 
 Github has some documentation for setting up custom domains with Github Pages [here](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/). According to the instructions, I had to create a file called CNAME (no additional file extensions like '.txt' required) in my root directory. The only information that this file contained was the name of my site like below:
 
