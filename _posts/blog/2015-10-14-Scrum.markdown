@@ -7,7 +7,7 @@ featured: true
 comments: true
 ---
 
-Last week, I was the Scrum Master for my [legacy project](../project/2015-10-14-aroswap) at Hack Reactor, I was responsible for merging my team's code (pull requests) into the Master Branch of github, and facilitating daily stand-ups to ensure that everyone was on the same page. The timing was perfect, since I reviewed Scrum's methodology in our comparison of Waterfall and Agile Methodologies in my Software Requirements class at UMUC last week. Inspired by these events, in this post I will summarize how we adopted the scrum methodolgy as students of Hack Reactor.
+Last week, I was the Scrum Master for my [legacy project](../project/2015-10-14-aroswap) at Hack Reactor. I was responsible for merging my team's code (pull requests) into the Master Branch of github, and facilitating daily stand-ups to ensure that everyone was on the same page. The timing was perfect, since I reviewed Scrum's methodology in our comparison of Waterfall and Agile Methodologies in my Software Requirements class at UMUC last week. Inspired by these events, in this post I will summarize how we adopted the scrum methodolgy as students of Hack Reactor.
 
 ### Scrum Methodology
 Scrum is an iterative and incremental agile software development framework for managing software projects and product or application development. Although there may be more roles, a Scrum project defines three core roles that are vital to the success of the project: the product owner, who represents the voice of  the  customer and ensures that the team delivers value to the business, the development team, usually 5 to 7 developers, who actually produce the software, and a Scrum Master, who keeps the team on track and ensures Scrum is followed.
