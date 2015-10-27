@@ -23,6 +23,3 @@ links:
 # Build settings
 markdown: kramdown
 
-# Add site map
-gems:
-  - jekyll-sitemap
