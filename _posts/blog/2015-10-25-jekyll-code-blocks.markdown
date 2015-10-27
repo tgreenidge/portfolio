@@ -1,10 +1,11 @@
 ---
 layout: post
 title:  "Displaying Code Blocks in Jekyll"
-date:   2015-10-25
+date:   2015-10-25 19:28:51
 categories: blog
 featured: true
 comments: true
+excerpt: "Instructions for displaying code blocks in Jekyll"
 ---
 
 Until recently, posting blocks of javascript code has been such a challenge. I followed the directions of so many markdown "cheatsheets" online, to enclose code with tick marks and the stipulated language. The result, as shown below, is inline and did not preserve indentation of code. You may have noticed that with the exception of my last post, I had been posting screen shots for code that spanned more than one line as a work around. Since images take up more space than text, I needed to find a solution fast, as I plan to include code in the majority of my posts.

@@ -1,10 +1,11 @@
 ---
 layout: post
 title:  "Yes, We Scrum"
-date:   2015-10-14
+date:   2015-10-14 19:28:51
 categories: blog
 featured: true
 comments: true
+excerpt: "Scrum methodology practised at Hack Reactor"
 ---
 
 Last week, I was the Scrum Master for my [legacy project](../project/2015-10-14-aroswap) at Hack Reactor. I was responsible for merging my team's code (pull requests) into the Master Branch of github, and facilitating daily stand-ups to ensure that everyone was on the same page. The timing was perfect, since I reviewed Scrum's methodology in our comparison of Waterfall and Agile Methodologies in my Software Requirements class at UMUC last week. Inspired by these events, in this post I will summarize how we adopted the scrum methodolgy as students of Hack Reactor.
