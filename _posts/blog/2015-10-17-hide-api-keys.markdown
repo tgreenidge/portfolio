@@ -5,7 +5,6 @@ date:   2015-10-17
 categories: blog
 featured: true
 comments: true
-excerpt: "Protecting Twitter API keys on Github Using Node.js"
 ---
 
 If you need to push your code to github for a node.js app that uses the Twitter API, here are the steps that you can take to protect your keys, by using gitignore.

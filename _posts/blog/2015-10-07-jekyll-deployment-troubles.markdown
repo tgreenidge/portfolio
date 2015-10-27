@@ -5,7 +5,6 @@ date:   2015-10-07
 categories: blog
 featured: true
 comments: true
-excerpt: "How to deploy your Jekyll site using Google Domains"
 ---
 
 For the first couple of days this week at Hack Reactor, we have been focusing on polishing our resumes. That coupled with the fact that I listed my domain on my Greenfield Group Project site, is driving me to get my site up and running. I have something that I want to show to the world, and I am using Github Pages as my platform. 
