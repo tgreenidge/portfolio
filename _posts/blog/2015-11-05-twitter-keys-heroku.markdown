@@ -17,7 +17,11 @@ When you create an app on Heroku, you can change the settings for your app, such
 ![heroku config variables img](/../../img/heroku-config.png)
 
 ### Node.js Configuration
-Now we will be modifying the code that was posted in my [previous post](http://www.tgreenidge.com/blog/hide-api-keys/). Since we want to have access to the API keys on both our local and deployed server, we need to point to both variables, since they have been set up differently. In Node.js, prepending environment variables with "process.env." allows your server to access parameters from the environment the app is running on. For example, since the twitter consumer key variable was set up as "TWITTER_CONSUMER_KEY" on heroku, to access when deployed, twitter.consumer_key will be mapped to process.env.TWITTER_CONSUMER_KEY. If running on our local server, the consumer key may be accessed using keys.consumer_keys as explained before. As you may recall '||' is the 'OR' operator in javascript. Hence, for each property of the twitter instantiation below, you tell the server - "Get me the variables that were set up on Heroku, if running on Heroku, or the ones that were set up for local server, if running on the local machine."
+Now we will be modifying the code that was posted in my [previous post](http://www.tgreenidge.com/blog/hide-api-keys/). Since we want to have access to the API keys on both our local and deployed server, we need to point to both variables, since they have been set up differently. 
+
+In Node.js, prepending environment variables with "process.env." allows your server to access parameters from the environment the app is running on. For example, since the twitter consumer key variable was set up as "TWITTER_CONSUMER_KEY" on heroku, to access when deployed, twitter.consumer_key will be mapped to process.env.TWITTER_CONSUMER_KEY. If running on our local server, the consumer key may be accessed using keys.consumer_keys as explained before. 
+
+As you may recall '||' is the 'OR' operator in javascript. Hence, for each property of the twitter instantiation below, you tell the server - "Get me the variables that were set up on Heroku, if running on Heroku, or the ones that were set up for local server, if running on the local machine."
 
 {% highlight javascript %}
 
