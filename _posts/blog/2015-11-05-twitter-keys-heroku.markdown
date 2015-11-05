@@ -13,7 +13,7 @@ In a [previous post](http://www.tgreenidge.com/blog/hide-api-keys/), I showed yo
 ### Heroku Configuration
 When you create an app on Heroku, you can change the settings for your app, such as setting up your domains, changing the name of the app, and changing your config variables. To change your config variables, click "Reveal Config Vars" tab that is found under "Settings" on your app's dashboard. You can then add the information for your API keys here. The picture below shows an example oh how this is done. You may also review the [documentation that heroku provides](https://devcenter.heroku.com/articles/config-vars), which includes information for using the command line to set up environmental variables.
 
-{:center} 
+{:.centered} 
 ![heroku config variables img](/../../img/heroku-config.png)
 
 ### Node.js Configuration
