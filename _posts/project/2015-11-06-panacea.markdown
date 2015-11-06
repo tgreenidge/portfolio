@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Panacea"
+date:   2015-11-06
+categories: project
+featured: true
+featured_img: '/img/panacea.png'
+live-link: http://panacea-disease-tracker.herokuapp.com/#
+---
+
+**About:**
+Panacea is a crowdsourcing app that uses web forms, twitter feeds, and soon, SMS, to track disease outbreaks globally and present a real time news feed, which displays date, disease name, and location of the disease report.  
+
+Text is processed using the IBM Alchemy API. For example, we filter out specific diseases from twitter feeds, and non english text is translated to english using the Yandex API. All text is then parsed through the Alchemy API for processing. 
+
+Alchemy helps us to perform sentiment, taxonomy, and entity analysis, which allows us to discard irrelevant tweets and confidently categorize a disease based on the content of the text. All relevant tweets are then saved to the PostgreSQL Database so that they may be accessed by the front end for display.
+
+A few things we are currently working on implementing are:
+
+ * Including an SMS feature to make this a true crowdsourcing app for people without internet access.
+ * Detecting emerging or rare diseases from web forms and SMS that are unknown to the Alchemy API, so that they we may be able to extract tweets that reference these diseases.
+ * Detecting location of disease outbreaks from tweets, since at this moment, we are only able to locate where the tweets originate from.
+
+
+**Stack:** AngularJS, Node.js, Express, PostgreSQL, Heroku, Socket.io, IBM Alchemy API, Google Maps, Yandex API, Twitter API, MapQuest
+
+**My Role:** Back End Engineer.
+
