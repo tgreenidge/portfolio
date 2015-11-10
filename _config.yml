@@ -17,8 +17,8 @@ links:
     url: /work
   - title: blog
     url: /blog
-  - title: hire me
-    url: /resume
+  # - title: hire me
+  #   url: /resume
 
 # Build settings
 markdown: kramdown
