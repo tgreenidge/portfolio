@@ -1,11 +1,13 @@
 ---
 layout: post
-title:  "Panacea"
-date:   2015-11-06
+title:  "Watchout"
+date:   2015-11-11
 categories: project
 featured: false
 featured_img: '/img/watchout.png'
 live-link: http://tgreenidge.github.io/watchout/
 ---
 
-Watchout is a game that was built on D3.js. Try to move the purple circle by trying to avoid those shurikens! Current Score resets when you collide with a shuriken.
+Watchout is a game that was built on D3.js, CSS and JavaScript. Try to move the purple circle by trying to avoid those shurikens! Current Score resets when you collide with a shuriken.
+
+I built this game with a partner, and we used paired programming to complete the project.
