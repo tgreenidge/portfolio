@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AroGames"
+title:  "NaviGames"
 date:   2015-10-14
 categories: project
 featured: true
@@ -11,7 +11,7 @@ live-link: http://www.navigames.info/
 
 
 **About:**
-AroGames is an Android App that was built on a project called [Aro](https://github.com/artemyss/Aro). The original Aro app allowed users to drop "pins" on a map, and a compass was used to indicate the user's current distance from, and direction to the "pin" that was dropped. 
+NaviGames is an Android App that was built on a project called [Aro](https://github.com/artemyss/Aro). The original Aro app allowed users to drop "pins" on a map, and a compass was used to indicate the user's current distance from, and direction to the "pin" that was dropped. 
 
 My team was drawn to the compass design of the Aro app, and immediately forked the project from Github for the creation of "hide and seek style" games. To date, we have 2 multiplayer games, "Swap" and "Assasins", that are housed in a game library. Players locate their targets by sole use of the information that is displayed in the compass view.
 
@@ -27,6 +27,6 @@ The app itself, was built on the Ionic framework and Angular. Sockets were used 
 
 I also serve as the scrum master for AroGames.
 
-***Check for release on Play Store on 11/9/2015***
+***Check for release on Play Store in November***
 
 

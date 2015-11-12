@@ -1,9 +1,8 @@
 ---
 layout: post
-title:  "Watchout"
-date:   2015-11-11
+title:  "Watchout!"
+date:   2015-10-07
 categories: project
-featured: false
 featured_img: '/img/watchout.png'
 live-link: http://tgreenidge.github.io/watchout/
 ---
