@@ -49,7 +49,7 @@ console.log(bubbleSort(myArray); ); //[ -2, -1, 0, 3, 3, 4, 4, 10, 16 ]
 
 
 ### Iterative Approach
-Remember that all recursive functions may be refactored to iterative functions. In this example, I simply refactored using a nested loop. I used the inner loop to stop just before the previously sorted element to the right, ignoring all larger elements that have already been sorted to the end of the array.
+Remember that all recursive functions may be refactored to iterative functions. In this example, I simply refactored using a nested loop. I used the inner loop to stop just before the previously sorted element to the right. This solution avoids iterating through the entire array by ignoring elements that have already been sorted at the end of the array.
 
 {% highlight javascript %}
 
@@ -78,7 +78,9 @@ I used a 5 element integer array to step through the process of the bubble sort,
 ```
 [1, -5, -1, 6, 0]
 ```
+
 **Iteration 1**
+
 * Starting at the first element, we compare to the second. Since 1 is greater that -5, we need to swap them.
 
 {:.centered}
@@ -141,18 +143,18 @@ We then repeat this process again until the array is sorted.
 
 **Iteration 3**
 
-On the 3rd iteration, since all the elements are in order, no swapping occurs as we move through the array and compare elements. 
+* On the 3rd iteration, since all the elements are in order, no swapping occurs as we move through the array and compare elements. 
 
 {:.centered}
 ```
 [-5, -1, 0, 1, 6]
 ```
 
-I believe this is a piece of information that was missing from my algorithm, since my solution ignores the fact that an array may already be sorted, causing unecessary work to be performed. Basically, the logic only needs to be repeated until no swapping occurs. In my example this occurs after the 3rd iteration of this process, however, my algorithms required 2 more iterations to be performed. 
+I believe this is a piece of information that was missing from my algorithm, since my solution ignores the fact that an array may already be sorted, causing unecessary work to be performed. Basically, the logic only needs to be repeated when swapping occurs, and stops if no swapping takes place. In my example swapping stops after the 2nd iteration of this process (on the 3rd iteration), however, my algorithms required 2 more iterations to be performed. 
 
 
 ### My Iterative Solution  - Refactored
-I refactored my iterative approach to include a "swapped" variable that flags anytime elements are swapped in the array. I do like however, that my original solution avoids iterating through the entire array by ignoring elements that have already been sorted at the end of the array, so I kept that logic in my refactor.
+I refactored my iterative approach to include a "swapped" variable that flags anytime elements are swapped in the array. 
 
 {% highlight javascript %}
 function bubbleSort(array) {
