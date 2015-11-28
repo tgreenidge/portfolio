@@ -1,12 +1,9 @@
 <footer class="site-footer">
   <div class="wrapper">
-    <div class="footer-content">
-      <h3> </h3>
-      <p></p>
-      <p>subscribe <a href="{{ "/feed.xml" | pepend: site.baseurl }}">via RSS</a></p>
-    </div>
+    
 
-    <div class="social-media">
+    <span class="social-media">
+     
       <ul>
         <li>
           <a href="http://linkedin.com/in/{{ site.linkedin_username }}"> <img src="{{site.baseurl}}/img/linkedin.svg" alt="linkedin logo" width="40"></a>
@@ -14,6 +11,12 @@
           <a href="http://www.twitter.com/{{ site.twitter_username }}"> <img src="{{site.baseurl}}/img/twitter.png" alt="twitter logo" width="40"></a>
         </li>
       <ul>
-    </div>
+    </span>
+    <span class="footer-content">
+      <h3> </h3>
+      <p></p>
+      <p>subscribe <a href="{{ "/feed.xml" | pepend: site.baseurl }}">via RSS</a></p>
+      &copy; 2015 Tisha Greenidge
+    </span>
   </div>
 </footer>

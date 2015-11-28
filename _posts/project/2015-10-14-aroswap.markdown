@@ -1,12 +1,32 @@
 ---
 layout: post
-title:  "AroSwap"
+title:  "NaviGames"
 date:   2015-10-14
 categories: project
 featured: true
 featured_img: '/img/aro-home.png'
-live-link: 
+live-link: http://www.navigames.info/
 ---
 
 
-Project description pending.
+
+**About:**
+NaviGames is an Android App that was built on a project called [Aro](https://github.com/artemyss/Aro). The original Aro app allowed users to drop "pins" on a map, and a compass was used to indicate the user's current distance from, and direction to the "pin" that was dropped. 
+
+My team was drawn to the compass design of the Aro app, and immediately forked the project from Github for the creation of "hide and seek style" games. To date, we have 2 multiplayer games, "Swap" and "Assasins", that are housed in a game library. Players locate their targets by sole use of the information that is displayed in the compass view.
+
+{:.centered} 
+![Aro compass img](/../../img/aro-compass.png)
+
+The app itself, was built on the Ionic framework and Angular. Sockets were used detect user entry and the back end was deployed to Heroku.
+
+
+**Stack:** Ionic Framework, AngularJS, Node.js, Express, Heroku, Socket.io, Google Geolocation
+
+**My Role:** As a front end engineer of this project, I designed and styled the app using Ionic's style library, Sass and CSS. I also assisted on the back end with the implementation of sockets on both the client and server, and game logic for the first game that was built called "Swap".
+
+I also serve as the scrum master for AroGames.
+
+***Check for release on Play Store in November***
+
+

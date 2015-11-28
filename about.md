@@ -11,8 +11,6 @@ After 10 yrs of working as an educator, I decided to make a daring career change
 
 As an undegraduate student pursuing a degree in Mathematics, I completed quite a number computer and programming courses, and always excelled in them, so anything that involved coding seemed like a good fit for my new career! I tried to learn as much as I can and attended Meetups and various programs in coding, databases, and data science, so that I may become more familiar the current technologies than those I was introduced to more than a decade before. 
 
-Currently, I am pursuing a Masters Degree in IT-Sofware Engineering at University of Maryland University College. I found that the program was preparing me more for a managerial role than a technical role in Software Development Projects, so I decided to attend Hack Reactor's Remote Beta Program to develop my coding skills and fast track my career.
-
-I am also an Electrician in the US Navy Reserves, in an engineering group known as the Seabees.
+Currently, I am pursuing a Masters Degree in IT-Sofware Engineering at University of Maryland University College (part time) . I am also an Electrician in the US Navy Reserves, in an engineering group known as the Seabees.
 
 

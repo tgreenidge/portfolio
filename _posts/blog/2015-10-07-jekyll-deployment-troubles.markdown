@@ -8,7 +8,7 @@ comments: true
 excerpt: "How to deploy your Jekyll site using Google Domains"
 ---
 
-For the first couple of days this week at Hack Reactor, we have been focusing on polishing our resumes. That coupled with the fact that I listed my domain on my Greenfield Group Project site, is driving me to get my site up and running. I have something that I want to show to the world, and I am using Github Pages as my platform. 
+ I've been working on some projects recently, decided that it is time to get my portfolio together, and start blogging. I have something that I want to show to the world, and I am using Github Pages as my platform. 
 
 ### Google.com Domain
 Did you know that Google now sells domains? I purchased my domain from Google after learning that GoDaddy would charge me $103, because I previously had a domain through them that expired. I am no longer eligible for their awesome discounts - ughh. My domain purchased through Google only cost me around $12 per year, with the following features as extracted from [Google Domains Help page](https://support.google.com/domains/answer/6010092?hl=en):

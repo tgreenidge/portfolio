@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to protect your Twitter Api Keys in Node.js with gitignore"
+title:  "Protecting Your Twitter API Keys in Node.js with gitignore"
 date:   2015-10-17 19:28:51
 categories: blog
 featured: true

@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Watchout!"
+date:   2015-10-07
+categories: project
+featured_img: '/img/watchout.png'
+live-link: http://tgreenidge.github.io/watchout/
+---
+
+**About:**
+Try to move the purple circle by trying to avoid those shurikens! Current Score resets when you collide with a shuriken.
+
+**Stack:** D3.js, CSS, JavaScript.
+
+I implemented the features of this game with a partner, and we used paired programming to complete the project.
