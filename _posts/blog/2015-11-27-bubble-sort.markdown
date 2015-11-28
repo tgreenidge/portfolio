@@ -56,4 +56,4 @@ function bubbleSort(array) {
 }
 
 console.log(bubbleSort(myArray)); //[ -6, -1, 0, 0, 1, 3, 5, 8, 8, 10, 12, 13, 24 ]
-{% highlight javascript %}
+{% endhighlight %}
