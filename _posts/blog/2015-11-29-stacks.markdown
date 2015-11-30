@@ -1,0 +1,243 @@
+---
+layout: post
+title:  "Data Structures -  Stacks"
+date:   2015-11-29 19:28:51
+categories: blog
+featured: true
+comments: true
+excerpt: "Stack Data Structure"
+---
+
+A stack is a Last In First Out (LIFO) data structure with a small set of operations. It is considered an abstract data structure, since unlike arrays, stacks are not physically represented in memory. In fact, stacks are conceptual and use non abstract data structures like linked lists and arrays for representation.
+
+You can think of a stack like a stack of plates or trays in a cafeteria. The last plate is added to the top of the other plates (stack), and removed from the top as well. Below are the four main operations performed on a stack.
+
+* **push()**: Adds an element to the top of the stack
+
+* **pop()**: Removes an element from the top of the stack and returns it
+
+* **peek()**: Returns(shows) the element at the top of the stack, but does not remove it
+
+* **isEmpty()**: Returns true if the stack is empty, and false if it is not
+
+In this post, I will provide 2 implementations of a stack - the first example uses arrays, while the second example uses javaScript objects.
+
+### Stack Implementation Using an Array
+In this example, an array is used to store the elements or data items in the stack. Since we are using arrays, I used the built in javaScript array functions of **push()** and **pop()**, which behaves exactly as the stack **push()** and **pop()** operations.
+{% highlight javascript %}
+var Stack = function () {
+  this._storage = [];
+
+  this.push = function (value) {
+    this._storage.push(value);
+  };
+
+  this.pop = function () {
+    return this._storage.pop();
+  };
+    
+  this.peek = function () {
+    return this._storage[this._storage.length - 1];
+  };
+
+  this.isEmpty = function () {
+    return this._storage.length === 0;
+  };
+
+  return this;
+};
+{% endhighlight %}
+
+Now let's test our stack implementation.
+{% highlight javascript %}
+var stack  = new Stack(); //creates a new instance of a Stack
+stack.push(27);
+stack.push(16);
+stack.isEmpty(); //false
+stack.pop(); // 16
+stack.peek(); // 27
+stack.isEmpty() //false
+stack.pop(); //27
+stack.isEmpty(); //true
+{% endhighlight %}
+
+### Stack Implementation Using an object
+{% highlight javascript %}
+var Stack = function () {
+  this._storage = {};
+  this.count = 0;
+
+  this.push = function (value) {
+    this._storage[this.count] = value;
+    this.count++;
+  };
+
+  this.pop = function () {
+    var temp = this._storage[this.count - 1];
+    delete this._storage[this.count - 1];
+    this.count--;
+    return temp;
+  };
+    
+  this.peek = function () {
+    return this._storage[this.count - 1];
+  };
+
+  this.isEmpty = function () {
+    return this.count === 0;
+  };
+
+  return this;
+};
+
+{% endhighlight %}
+
+Again, testing our stack:
+{% highlight javascript %}
+var stack  = new Stack();
+stack.push(27);
+stack.push(16);
+stack.isEmpty(); //false
+stack.pop(); // 16
+stack.peek(); // 27
+stack.isEmpty() //false
+stack.pop(); //27
+stack.isEmpty(); //true
+{% endhighlight %}
+
+Notice that the time complexities for these stack methods, as implemented above are constant.
+
+### Example Of A Stack In Action
+Let's consider the recursive factorial function below.
+{% highlight javascript %}
+var factorial = function (n) {
+  if(n === 0){
+    return 1;
+  }
+  return n * factorial(n-1);
+}
+{% endhighlight %}
+
+Now suppose we want to find the value of **4!** using the function above.
+
+```
+factorial(4);
+```
+
+When this expression is run, stack framed with the unknown values of the expressions are pushed onto the recursive stack until a value of the expression is known. In this example, this occurs when n = 0. The value of the factorial(0) = 1;
+
+{:.centered}
+**Recursive Stack**            
+
+----------------
+
+{:.centered}
+factorial(0) = 1
+
+
+----------------
+
+{:.centered}
+factorial(1) = 1 * factorial(0)
+
+----------------
+
+{:.centered}
+factorial(2) = 2 * factorial(1)
+
+----------------
+
+{:.centered}
+factorial(3) = 3 * factorial(2)
+
+----------------
+
+{:.centered}
+factorial(4) = 4 * factorial(3)
+
+----------------  
+
+
+Now the known values are popped of the stack and are returned to the new top element in the stack. In this case, the factorial(0) expression is replaced with the value 1, and factorial(1) and be evaluated.
+
+{:.centered}
+**Recursive Stack**
+
+----------------
+
+{:.centered}
+factorial(1) = 1 * (1) = 1
+
+----------------
+
+{:.centered}
+factorial(2) = 2 * factorial(1)
+
+----------------
+
+{:.centered}
+factorial(3) = 3 * factorial(2)
+
+----------------
+
+{:.centered}
+factorial(4) = 4 * factorial(3)
+
+---------------- 
+
+Now, the factorial(1) expression is popped off the stack frame, and replaced in the expression for factorial(2).
+
+{:.centered}
+**Recursive Stack**
+
+----------------
+
+{:.centered}
+factorial(2) = 2 * (1) = 2
+
+----------------
+
+{:.centered}
+factorial(3) = 3 * factorial(2)
+
+----------------
+
+{:.centered}
+factorial(4) = 4 * factorial(3)
+
+---------------- 
+
+The factorial(2) expression is popped off the stack frame, and replaced in the expression for factorial(3).
+
+{:.centered}
+**Recursive Stack**
+
+----------------
+
+{:.centered}
+factorial(3) = 3 * (2) = 6
+
+----------------
+
+{:.centered}
+factorial(4) = 4 * factorial(3)
+
+---------------- 
+
+The factorial(3) expression is popped off the stack frame, and replaced in the expression for factorial(4).
+
+{:.centered}
+**Recursive Stack**
+
+----------------
+
+{:.centered}
+factorial(4) = 4 * (6) = 24
+
+---------------- 
+
+Finally, our answer is popped off the stack and returned to us.
+
+```
+factorial(4); //24
+```
