@@ -10,7 +10,9 @@ excerpt: "Stack Data Structure"
 
 A stack is a Last In First Out (LIFO) data structure with a small set of operations. It is considered an abstract data structure, since unlike arrays, stacks are not physically represented in memory. In fact, stacks are conceptual and use non abstract data structures like linked lists and arrays for representation.
 
-You can think of a stack like a stack of plates or trays in a cafeteria. The last plate is added to the top of the other plates (stack), and removed from the top as well. Below are the four main operations performed on a stack.
+You can think of a stack like a stack of plates or trays in a cafeteria. The last plate is added to the top of the other plates (stack), and removed from the top as well. You can only access the plate at the bottom of the stack by removing all previous plates. 
+
+Below are the four main operations performed on a stack.
 
 * **push()**: Adds an element to the top of the stack
 
@@ -124,7 +126,7 @@ Now suppose we want to find the value of **4!** using the function above.
 factorial(4);
 ```
 
-When this expression is run, stack framed with the unknown values of the expressions are pushed onto the recursive stack until a value of the expression is known. In this example, this occurs when n = 0. The value of the factorial(0) = 1;
+When this expression is run, stack frames with the unknown values of the expressions are pushed onto the recursive stack until a value of the expression is known. In this example, this occurs when n = 0. The value of the factorial(0) = 1;
 
 {:.centered}
 **Recursive Stack**            
@@ -158,7 +160,7 @@ factorial(4) = 4 * factorial(3)
 ----------------  
 
 
-Now the known values are popped of the stack and are returned to the new top element in the stack. In this case, the factorial(0) expression is replaced with the value 1, and factorial(1) and be evaluated.
+Now the known values are popped off the stack and are returned to the new top element in the stack. In this case, the factorial(0) expression is replaced with the value 1, so that factorial(1) can be evaluated.
 
 {:.centered}
 **Recursive Stack**
@@ -236,7 +238,7 @@ factorial(4) = 4 * (6) = 24
 
 ---------------- 
 
-Finally, our answer is popped off the stack and returned to us.
+Finally, factorial(4) is evaluated, the answer is popped off the stack and returned to us.
 
 ```
 factorial(4); //24
